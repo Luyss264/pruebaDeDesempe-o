@@ -243,8 +243,11 @@ The levels are:
                 else:
                     print("\nWrite a valid data")
 
-            
-            print(f"\nYou have updated: ID:{i['id']} | nombre:{i['name']} | age:{i['age']} | level:{i['level']} | status:{i['status']}")
+            print(f"\nYou have updated: ID:{i['id']} | nombre:{i['name']} | age:{i['age']} | level:{i['level']} | status:{i['status']}")      
+
+    if not exist:
+        print('\nThe student is not found')
+
 
 #The function to delete a student
 def delete_student(students_list):
